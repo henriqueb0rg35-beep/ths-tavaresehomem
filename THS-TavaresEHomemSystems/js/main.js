@@ -1,5 +1,5 @@
 // Lógica de simulação de terminal
-const textArray = "Arquitetura de Software & Manutenção.";
+const textArray = "Desenvolvimento/Manutenções e Mídias Sociais.";
 const typingElement = document.querySelector('.typing-text');
 let index = 0;
 
