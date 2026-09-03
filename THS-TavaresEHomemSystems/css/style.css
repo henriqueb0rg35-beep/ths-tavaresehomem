@@ -1,1 +1,20 @@
+/* Definição do nosso Design System (Paleta de Cores THS) */
+:root {
+    --ths-verde-musgo: #2e472d; 
+    --ths-azul-neon: #00f3ff;
+    --ths-branco: #ffffff;
+    --ths-preto: #121212;
+}
 
+/* Reset básico para garantir que o site se comporte igual em todos os navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--ths-preto); /* Usando fundo escuro para destacar o neon e o verde */
+    color: var(--ths-branco);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
