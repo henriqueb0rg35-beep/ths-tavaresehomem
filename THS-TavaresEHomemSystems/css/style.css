@@ -18,3 +18,47 @@ body {
     color: var(--ths-branco);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+/* --- ESTRUTURA DO MENU --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #050505; 
+    border-bottom: 2px solid var(--ths-verde-musgo);
+}
+
+.logo h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+/* Efeito luminoso no logo */
+.neon-text {
+    color: var(--ths-azul-neon);
+    text-shadow: 0 0 8px var(--ths-azul-neon);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: var(--ths-branco);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease; /* Prepara o elemento para uma animação suave */
+}
+
+/* --- ANIMAÇÕES INTERATIVAS (HOVER) --- */
+.nav-links a:hover, .nav-links a.active {
+    background-color: var(--ths-azul-neon);
+    color: var(--ths-preto);
+    box-shadow: 0 0 15px var(--ths-azul-neon); /* Brilho interativo */
+    transform: translateY(-3px); /* Faz o botão "pular" levemente */
+}
