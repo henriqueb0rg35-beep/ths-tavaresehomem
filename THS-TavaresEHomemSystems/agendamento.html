@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos e Serviços - THS</title>
+  <!-- O caminho do CSS usa '../' para voltar uma pasta e achar o arquivo -->
+  <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>THS <span class="neon-text">Systems</span></h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="product.html">Produtos e Serviços</a></li>
+            <li><a href="sobre.html">Sobre Nós (LGPD)</a></li>
+            <li><a href="agendamento.html" class="active">Agendamento</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container-agendamento">
+    <section class="agendamento-header">
+        <h2>Inicie seu <span class="neon-text">Projeto</span></h2>
+        <p>Preencha os dados abaixo para agendarmos nossa reunião técnica e definirmos a melhor solução.</p>
+    </section>
+
+    <div class="agendamento-content">
+        <!-- Formulário de Agendamento -->
+        <form class="form-agendamento">
+            <h3>Dados para Contato</h3>
+            
+            <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail Corporativo</label>
+                <input type="email" id="email" placeholder="seu@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="servico">Serviço de Interesse</label>
+                <select id="servico" required>
+                    <option value="" disabled selected>Selecione uma opção</option>
+                    <option value="web">Desenvolvimento Web</option>
+                    <option value="sistema">Sistemas Sob Medida</option>
+                    <option value="manutencao">Manutenção de TI</option>
+                    <option value="lgpd">Adequação LGPD</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="data">Data de Preferência</label>
+                <input type="date" id="data" required>
+            </div>
+
+            <button type="button" class="btn-primary btn-submit">Confirmar Agendamento</button>
+        </form>
+
+        <!-- Área de Pagamento -->
+        <div class="pagamento-info">
+            <h3>Métodos de <span class="neon-text">Pagamento</span></h3>
+            <p>Para serviços com taxa de consultoria inicial, utilize nossas opções seguras abaixo:</p>
+            
+            <div class="card-pagamento">
+                <h4>Pagamento via PIX</h4>
+                <p>Chave CNPJ: 00.000.000/0000-00</p>
+                <div class="pix-placeholder">
+                    [QR Code PIX Aqui]
+                </div>
+            </div>
+
+            <div class="card-pagamento">
+                <h4>Cartão de Crédito</h4>
+                <p>Ambiente seguro integrado via Mercado Pago / Stripe.</p>
+                <button class="btn-buy">Pagar com Cartão</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; THS - Tavares e Homem Systems. Todos os direitos reservados.</p>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
