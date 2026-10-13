@@ -3,35 +3,22 @@
   <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Produtos e Serviços - THS</title>
+  <title>Agendamento e dúvidas — THS</title>
   <!-- O caminho do CSS usa '../' para voltar uma pasta e achar o arquivo -->
-  <link rel="stylesheet" href="../css/style.css">
-  </head>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="THS — Tavares e Homem Systems. Desenvolvimento web, sistemas sob medida, manutenção de TI, design e inteligência artificial aplicada ao seu negócio."></head>
   <body>
-<header>
-    <nav class="navbar">
-        <div class="logo">
-            <h1>THS <span class="neon-text">Systems</span></h1>
-        </div>
-        <ul class="nav-links">
-            <li><a href="../index.html">Início</a></li>
-            <li><a href="portfolio.html">Portfólio</a></li>
-            <li><a href="product.html">Produtos e Serviços</a></li>
-            <li><a href="sobre.html">Sobre Nós (LGPD)</a></li>
-            <li><a href="agendamento.html" class="active">Agendamento</a></li>
-        </ul>
-    </nav>
-</header>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a><header class="site-header"><nav class="navbar" aria-label="Navegação principal"><a class="brand" href="index.html" aria-label="THS — início"><span class="brand-mark">THS<span>.</span></span><span class="brand-name">Tavares e Homem<br>Systems</span></a><details class="menu"><summary aria-label="Abrir ou fechar menu"><span class="menu-label">Menu</span><span class="hamburger" aria-hidden="true"><i></i><i></i><i></i></span></summary><ul class="nav-links"><li><a href="index.html">Início</a></li><li><a href="product.html">Produtos e serviços</a></li><li><a href="portfolio.html">Portfólio</a></li><li><a href="sobre.html">Sobre nós e LGPD</a></li><li><a href="agendamento.html" aria-current="page">Agendamento e dúvidas</a></li></ul></details></nav></header>
 
-<main class="container-agendamento">
+<main id="conteudo" class="container-agendamento">
     <section class="agendamento-header">
-        <h2>Inicie seu <span class="neon-text">Projeto</span></h2>
+        <h1 class="page-title">Inicie seu <span class="neon-text">Projeto</span></h1>
         <p>Preencha os dados abaixo para agendarmos nossa reunião técnica e definirmos a melhor solução.</p>
     </section>
 
     <div class="agendamento-content">
         <!-- Formulário de Agendamento -->
-        <form class="form-agendamento">
+        <form class="form-agendamento"><p class="form-note">Prepare sua solicitação para compartilhar com a equipe. A data será confirmada após o contato.</p>
             <h3>Dados para Contato</h3>
             
             <div class="form-group">
@@ -51,7 +38,7 @@
                     <option value="web">Desenvolvimento Web</option>
                     <option value="sistema">Sistemas Sob Medida</option>
                     <option value="manutencao">Manutenção de TI</option>
-                    <option value="lgpd">Adequação LGPD</option>
+                    <option value="ia">Automação e Inteligência Artificial</option><option value="arquitetura">Arquitetura de Software</option><option value="design">UI/UX Design Interativo</option><option value="lgpd">Adequação LGPD</option>
                 </select>
             </div>
 
@@ -60,35 +47,34 @@
                 <input type="date" id="data" required>
             </div>
 
-            <button type="button" class="btn-primary btn-submit">Confirmar Agendamento</button>
-        </form>
+            <button type="submit" class="btn-primary btn-submit">Preparar solicitação</button>
+        <p id="form-status" role="status"></p><div id="request-result" hidden><label for="request-text">Sua solicitação</label><textarea id="request-text" rows="8" readonly></textarea><button type="button" class="btn-buy" id="copy-request">Copiar solicitação</button><p>Compartilhe este texto pelo canal de contato da THS que você já utiliza. Nenhum dado foi enviado e nenhum horário foi reservado.</p></div></form>
 
         <!-- Área de Pagamento -->
         <div class="pagamento-info">
             <h3>Métodos de <span class="neon-text">Pagamento</span></h3>
-            <p>Para serviços com taxa de consultoria inicial, utilize nossas opções seguras abaixo:</p>
+            <p>Para serviços com taxa de consultoria inicial, as condições são informadas na proposta aprovada:</p>
             
             <div class="card-pagamento">
                 <h4>Pagamento via PIX</h4>
-                <p>Chave CNPJ: 00.000.000/0000-00</p>
+                <p>A chave PIX será informada pela equipe após a aprovação da proposta.</p>
                 <div class="pix-placeholder">
-                    [QR Code PIX Aqui]
+                    QR Code fornecido junto à cobrança.
                 </div>
             </div>
 
             <div class="card-pagamento">
                 <h4>Cartão de Crédito</h4>
-                <p>Ambiente seguro integrado via Mercado Pago / Stripe.</p>
-                <button class="btn-buy">Pagar com Cartão</button>
+                <p>Pagamento por link seguro via Mercado Pago / Stripe, sujeito à configuração e confirmação da equipe.</p>
+                <p class="form-note">Solicite as condições de pagamento na reunião.</p>
             </div>
         </div>
     </div>
 </main>
 
-<footer>
-    <p>&copy; THS - Tavares e Homem Systems. Todos os direitos reservados.</p>
-</footer>
+<footer class="site-footer"><div><a class="footer-brand" href="index.html">THS Systems</a><p>Tecnologia bem pensada. Relações duradouras.</p></div><div><a href="product.html">Soluções</a><a href="sobre.html">Sobre nós e privacidade</a><a href="agendamento.html">Vamos conversar</a></div><small>© THS — Tavares e Homem Systems. Todos os direitos reservados.</small></footer>
 
-<script src="../js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
+

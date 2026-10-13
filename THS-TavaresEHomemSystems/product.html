@@ -5,27 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Produtos e Serviços - THS</title>
   <!-- O caminho do CSS usa '../' para voltar uma pasta e achar o arquivo -->
-  <link rel="stylesheet" href="../css/style.css">
-  </head>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="THS — Tavares e Homem Systems. Desenvolvimento web, sistemas sob medida, manutenção de TI, design e inteligência artificial aplicada ao seu negócio."></head>
   <body>
-<header>
-    <nav class="navbar">
-        <div class="logo">
-            <h1>THS <span class="neon-text">Systems</span></h1>
-        </div>
-        <ul class="nav-links">
-            <li><a href="../index.html">Início</a></li>
-            <li><a href="portfolio.html">Portfólio</a></li>
-            <li><a href="product.html" class="active">Produtos e Serviços</a></li>
-            <li><a href="sobre.html">Sobre Nós (LGPD)</a></li>
-            <li><a href="agendamento.html">Agendamento</a></li>
-        </ul>
-    </nav>
-</header>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a><header class="site-header"><nav class="navbar" aria-label="Navegação principal"><a class="brand" href="index.html" aria-label="THS — início"><span class="brand-mark">THS<span>.</span></span><span class="brand-name">Tavares e Homem<br>Systems</span></a><details class="menu"><summary aria-label="Abrir ou fechar menu"><span class="menu-label">Menu</span><span class="hamburger" aria-hidden="true"><i></i><i></i><i></i></span></summary><ul class="nav-links"><li><a href="index.html">Início</a></li><li><a href="product.html" aria-current="page">Produtos e serviços</a></li><li><a href="portfolio.html">Portfólio</a></li><li><a href="sobre.html">Sobre nós e LGPD</a></li><li><a href="agendamento.html">Agendamento e dúvidas</a></li></ul></details></nav></header>
 
-<main class="container-produtos">
+<main id="conteudo" class="container-produtos">
     <section class="products-header">
-        <h2>Nossas <span class="neon-text">Soluções Tecnológicas</span></h2>
+        <h1 class="page-title">Nossas <span class="neon-text">Soluções Tecnológicas</span></h1>
         <p>Conheça o ecossistema completo de serviços da THS. Do design da interface à conformidade rigorosa com a LGPD, desenvolvemos o futuro do seu negócio.</p>
     </section>
 
@@ -34,7 +21,7 @@
         
         <!-- Serviço 1 -->
         <div class="product-card">
-            <div class="icon">💻</div>
+            <div class="icon" aria-hidden="true">💻</div>
             <h3>Desenvolvimento Web</h3>
             <p>Criação de sites institucionais, portfólios e landing pages interativas com foco em SEO, performance e alta conversão.</p>
             <span class="price">Sob Orçamento</span>
@@ -43,7 +30,7 @@
 
         <!-- Serviço 2 -->
         <div class="product-card">
-            <div class="icon">⚙️️</div>
+            <div class="icon" aria-hidden="true">⚙️️</div>
             <h3>Sistemas Sob Medida</h3>
             <p>Engenharia de software personalizada. Sistemas web robustos e automatizados que se adaptam exatamente ao seu fluxo de trabalho.</p>
             <span class="price">Sob Orçamento</span>
@@ -52,7 +39,7 @@
 
         <!-- Serviço 3 -->
         <div class="product-card">
-            <div class="icon">🏗️</div>
+            <div class="icon" aria-hidden="true">🏗️</div>
             <h3>Arquitetura de Software</h3>
             <p>Estruturação de bases escaláveis (Clean Architecture), criação e integração de APIs para garantir que seu sistema cresça sem gargalos.</p>
             <span class="price">Consultoria Técnica</span>
@@ -61,7 +48,7 @@
 
         <!-- Serviço 4 -->
         <div class="product-card">
-            <div class="icon">🔧</div>
+            <div class="icon" aria-hidden="true">🔧</div>
             <h3>Manutenção de TI</h3>
             <p>Suporte contínuo para ecossistemas digitais. Correção de bugs, monitoramento de servidores e atualizações críticas de segurança.</p>
             <span class="price">Planos Mensais</span>
@@ -70,7 +57,7 @@
 
         <!-- Serviço 5 -->
         <div class="product-card">
-            <div class="icon">🔒</div>
+            <div class="icon" aria-hidden="true">🔒</div>
             <h3>Adequação LGPD</h3>
             <p>Implementação do conceito Privacy by Design, auditoria de segurança de dados e criptografia para proteger clientes e empresas.</p>
             <span class="price">Consultoria Específica</span>
@@ -79,20 +66,18 @@
 
         <!-- Serviço 6 -->
         <div class="product-card">
-            <div class="icon">✨</div>
+            <div class="icon" aria-hidden="true">✨</div>
             <h3>UI/UX Design Interativo</h3>
             <p>Design de interfaces modernas com animações avançadas. Transformamos a jornada do seu usuário em uma experiência imersiva.</p>
             <span class="price">Sob Orçamento</span>
             <a href="agendamento.html" class="btn-buy">Solicitar Proposta</a>
         </div>
 
-    </section>
-</main>
+    <article class="product-card"><div class="icon" aria-hidden="true">↗</div><h3>Automação e Inteligência Artificial</h3><p>Integração de ferramentas de IA, assistentes para rotinas de trabalho e automação de processos. Cada solução considera revisão humana, limites de acesso e proteção dos dados.</p><span class="price">Sob Orçamento</span><a href="agendamento.html?servico=ia" class="btn-buy">Conversar sobre IA</a></article></section><section class="deliverables"><p class="eyebrow">PRODUTOS DIGITAIS SOB MEDIDA</p><h2>O que podemos construir juntos</h2><p>Sites institucionais, landing pages, portfólios, painéis de gestão, sistemas internos, integrações de APIs e ferramentas de automação. Escopo, prazos e investimento são definidos na proposta de cada projeto.</p></section></main>
 
-<footer>
-    <p>&copy; THS - Tavares e Homem Systems. Todos os direitos reservados. Sistemas desenvolvidos sob rigorosos padrões da LGPD.</p>
-</footer>
+<footer class="site-footer"><div><a class="footer-brand" href="index.html">THS Systems</a><p>Tecnologia bem pensada. Relações duradouras.</p></div><div><a href="product.html">Soluções</a><a href="sobre.html">Sobre nós e privacidade</a><a href="agendamento.html">Vamos conversar</a></div><small>© THS — Tavares e Homem Systems. Todos os direitos reservados.</small></footer>
 
-<script src="../js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
+
